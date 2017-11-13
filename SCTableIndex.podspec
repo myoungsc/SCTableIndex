@@ -15,8 +15,8 @@ Pod::Spec.new do |s|
 
   s.homepage         = 'https://github.com/myoungsc/SCTableIndex'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'myoungsc.dev@gmail.com' => 'myoungsc.dev@gmail.com' }
-  s.source           = { :git => 'https://github.com/myoungsc.dev@gmail.com/SCTableIndex.git', :tag => s.version.to_s }
+  s.author           = { 'myoungsc' => 'myoungsc.dev@gmail.com' }
+  s.source           = { :git => 'https://github.com/myoungsc/SCTableIndex.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
   s.source_files = 'SCTableIndex/Classes/**/*'
