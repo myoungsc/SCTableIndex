@@ -1,0 +1,16 @@
+PODS:
+  - SCTableIndex (0.1.0)
+
+DEPENDENCIES:
+  - SCTableIndex (from `../`)
+
+EXTERNAL SOURCES:
+  SCTableIndex:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SCTableIndex: 730e3caa06a82c4c599230c2e369291923db68bf
+
+PODFILE CHECKSUM: 1fa7540c75c8ca3cb99db478130c6a10ef723f96
+
+COCOAPODS: 1.3.1

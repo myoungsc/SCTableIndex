@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SCTableIndex_Example' do
+  pod 'SCTableIndex', :path => '../'
+
+  target 'SCTableIndex_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
