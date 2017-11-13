@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SCTableIndex'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'SCTableIndex is tableview item index list not use section Header'
 
   s.description      = 'SCTableIndex is tableview item index list not use section Header. If you set the sorted item as a string array, it makes a table of contents with the first letter. Then click on the letter to move the table view to the first item.'
