@@ -2,7 +2,7 @@
 //  SCIndexTable.swift
 //  Pods-SCTableIndex_Example
 //
-//  Created by maccli1 on 2017. 11. 9..
+//  Created by myoungsc on 2017. 11. 9..
 //
 
 import UIKit
@@ -41,7 +41,7 @@ public class SCTableIndex: UIView {
         arrItem = item
         
         for (i, element) in arrItem.enumerated() {
-            for ch in element.unicodeScalars {                
+            for ch in element.unicodeScalars {
                 setNamefirstInitial(ch.value, index: i, str: element.first!)
                 break
             }
@@ -63,7 +63,7 @@ public class SCTableIndex: UIView {
             btnInitial.setTitleColor(initialTextColor, for: .normal)
             btnInitial.addTarget(self, action: #selector(btnInitialB(_:)), for: .touchUpInside)
             self.addSubview(btnInitial)
-
+            
             fBtnY += fBtnHeight
         }
     }
@@ -95,3 +95,4 @@ public class SCTableIndex: UIView {
     }
     
 }
+
