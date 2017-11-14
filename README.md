@@ -9,7 +9,7 @@
 SCTableIndex is tableview item index list not use section Header. If you set the sorted item as a string array, it makes a table of contents with the first letter. Then click on the letter to move the table view to the first item.
 
 ## ScreenShot
-![](https://github.com/myoungsc/SCPageControl/blob/master/ScreenShot/SCPageControl.gif)
+![](https://github.com/myoungsc/SCTableIndex/blob/master/SCTableIndex.gif)
 
 ## Requirements
 ```
