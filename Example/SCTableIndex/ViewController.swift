@@ -28,8 +28,8 @@ class ViewController: UIViewController {
         print(arrItem)
         
         sctbindex.delegate = self
-        //Use Selector Font, HelveticaNeue-Medium is Normal Font
-//      sctbindex.initialFont = UIFont(name: "HelveticaNeue-Medium", size: 13)!
+        //Use Selector Font
+        sctbindex.initialFont = UIFont(name: "HelveticaNeue-Medium", size: 13)!
         //Use Selector initial Text Color, black is Normal Color
 //        sctbindex.initialTextColor = UIColor(red: 50.0/255.0, green: 50.0/255.0, blue: 50.0/255.0, alpha: 1.0)
         //String Array item

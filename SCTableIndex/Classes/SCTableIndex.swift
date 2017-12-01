@@ -19,7 +19,7 @@ public class SCTableIndex: UIView {
     let screenHeight = UIScreen.main.bounds.height
     
     var arrItem: [String] = []
-    public var initialFont: UIFont = UIFont(name: "HelveticaNeue-Medium", size: 13)!
+    public var initialFont: UIFont?
     public var initialTextColor: UIColor = UIColor(red: 50.0/255.0, green: 50.0/255.0, blue: 50.0/255.0, alpha: 1.0)
     var dicInitials: [String: Int] = [:]
     
@@ -54,12 +54,14 @@ public class SCTableIndex: UIView {
             fBtnHeight = (self.frame.height-60) / CGFloat(dicInitials.count)
         }
         
-        fBtnY = (self.frame.height-(fBtnHeight*CGFloat(initialDicKeys.count))) / 2.0
+        fBtnY = ((self.frame.height-(fBtnHeight*CGFloat(initialDicKeys.count))) / 2.0) + 20
         
         for element in initialDicKeys {
             let btnInitial: UIButton = UIButton(frame: CGRect(x: 0, y: fBtnY, width: 20, height: fBtnHeight))
             btnInitial.setTitle(element, for: .normal)
-            btnInitial.titleLabel?.font = initialFont
+            if let font: UIFont = initialFont {
+                btnInitial.titleLabel?.font = font
+            }
             btnInitial.setTitleColor(initialTextColor, for: .normal)
             btnInitial.addTarget(self, action: #selector(btnInitialB(_:)), for: .touchUpInside)
             self.addSubview(btnInitial)
