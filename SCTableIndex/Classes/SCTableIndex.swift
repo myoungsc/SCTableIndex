@@ -15,8 +15,7 @@ public class SCTableIndex: UIView {
     
     weak public var delegate: SCTableIndexDelegate?
     
-    let screenWidth: CGFloat = UIScreen.main.bounds.width
-    let screenHeight = UIScreen.main.bounds.height
+    let screenHeight: CGFloat = UIScreen.main.bounds.height
     
     var arrItem: [String] = []
     public var initialFont: UIFont?
@@ -49,13 +48,12 @@ public class SCTableIndex: UIView {
         
         let initialDicKeys = dicInitials.keys.sorted()
         
-        var fBtnHeight: CGFloat = 30, fBtnY: CGFloat = 0
-        if (self.frame.height-60) / CGFloat(initialDicKeys.count) < 30 {
-            fBtnHeight = (self.frame.height-60) / CGFloat(dicInitials.count)
+        var fBtnHeight: CGFloat = 15, fBtnY: CGFloat = 0
+        if (screenHeight-60) / CGFloat(initialDicKeys.count) > 15 {
+            fBtnHeight = (screenHeight-60) / CGFloat(dicInitials.count)
         }
-        
-        fBtnY = ((self.frame.height-(fBtnHeight*CGFloat(initialDicKeys.count))) / 2.0) + 20
-        
+        fBtnY = ((screenHeight-(fBtnHeight*CGFloat(initialDicKeys.count))) / 2.0) - 10
+
         for element in initialDicKeys {
             let btnInitial: UIButton = UIButton(frame: CGRect(x: 0, y: fBtnY, width: 20, height: fBtnHeight))
             btnInitial.setTitle(element, for: .normal)
