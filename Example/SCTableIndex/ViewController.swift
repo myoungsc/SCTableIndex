@@ -59,9 +59,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CellMain
-        cell.lbName.text = arrItem[indexPath.row]
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? CellMain else { return UITableViewCell() }
         
+        cell.lbName.text = arrItem[indexPath.row]
         return cell
     }
 }

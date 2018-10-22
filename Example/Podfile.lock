@@ -1,5 +1,5 @@
 PODS:
-  - SCTableIndex (0.1.1)
+  - SCTableIndex (0.1.2)
 
 DEPENDENCIES:
   - SCTableIndex (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SCTableIndex: 15fafd3cc2ec0d1bc40301944df613867b7fe322
+  SCTableIndex: 903a5f22338dc88e06d9e34bc47bb92a802d2d88
 
 PODFILE CHECKSUM: 1fa7540c75c8ca3cb99db478130c6a10ef723f96
 
