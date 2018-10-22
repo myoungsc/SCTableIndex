@@ -13,8 +13,8 @@ SCTableIndex is tableview item index list not use section Header. If you set the
 
 ## Requirements
 ```
-* Swift 4
-* XCode 9.1
+* Swift 4.2
+* XCode 10.0
 * iOS 9.0 (Min SDK)
 ```
 
@@ -23,8 +23,8 @@ SCTableIndex is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-//Swift 4.0
-pod "SCTableIndex"
+pod "SCTableIndex" //Swift 4.2
+pod "SCTableIndex", -> '0.1.2' //Swift 4.0
 
 //After
 pod install
