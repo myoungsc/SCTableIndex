@@ -23,7 +23,9 @@ SCTableIndex is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "SCTableIndex" //Swift 4.2
+pod "SCTableIndex"
+
+pod "SCTableIndex", -> '0.2.0' //Swift 4.2
 pod "SCTableIndex", -> '0.1.2' //Swift 4.0
 
 //After
