@@ -13,8 +13,8 @@ SCTableIndex is tableview item index list not use section Header. If you set the
 
 ## Requirements
 ```
-* Swift 4.2
-* XCode 10.0
+* Swift 5.0
+* XCode 10.2
 * iOS 9.0 (Min SDK)
 ```
 
